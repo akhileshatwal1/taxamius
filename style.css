@@ -1,0 +1,144 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #F7FAFC;
+  color: #1C2C54;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1C2C54;
+  color: white;
+  padding: 15px 40px;
+}
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+header .cta {
+  background: #2C7A7B;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #1C2C54, #2C7A7B);
+  color: white;
+}
+.hero h1 {
+  font-size: 2.5em;
+}
+.hero .btn {
+  background: #D4AF37;
+  padding: 12px 25px;
+  color: #1C2C54;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Flyer Section */
+.flyer {
+  text-align: center;
+  padding: 40px;
+}
+.flyer img {
+  max-width: 600px;
+  width: 100%;
+  border: 2px solid #1C2C54;
+  border-radius: 8px;
+}
+
+/* Services */
+.services {
+  padding: 40px;
+  background: #FFFFFF;
+}
+.services h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #2C7A7B;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Contact Page */
+.contact {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #FFFFFF;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact-form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background: #2C7A7B;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background: #1C2C54;
+}
+.contact-info {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.95em;
+}
+
+/* Footer */
+footer {
+  background: #1C2C54;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+footer a {
+  color: #D4AF37;
+  text-decoration: none;
+}
