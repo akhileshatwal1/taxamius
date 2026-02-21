@@ -39,7 +39,7 @@ header .cta {
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 20px 20px;
   background: linear-gradient(to right, #1C2C54, #2C7A7B);
   color: white;
 }
@@ -60,9 +60,10 @@ header .cta {
   text-align: center;
   padding: 40px;
 }
+
 .flyer img {
-  max-width: 600px;
-  width: 100%;
+  max-width: 100%;   /* allows image to scale to section width */
+  height: auto;      /* maintains aspect ratio */
   border: 2px solid #1C2C54;
   border-radius: 8px;
 }
