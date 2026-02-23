@@ -82,9 +82,9 @@ nav ul li a:hover {
   /* Service image as hero background */
   background-image: url('index.jpg'); /* your service/flyer image */
   background-size: cover;                /* scales width & height proportionally */
-  background-position: center center;    /* keep image centered */
+  background-position: top center;    /* keep image centered */
   background-repeat: no-repeat;
-
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;               /* vertically center text */
@@ -345,6 +345,10 @@ footer a {
 @media (max-width: 768px) {
   .index-banner {
     height: 220px;
+  }
+   .hero {
+    height: 220px;     /* shorter height on mobile */
+    padding-top: 20px; /* gives text space from top */
   }
 }
 
