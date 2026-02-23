@@ -7,10 +7,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
+
+  <!-- ===== HEADER ===== -->
   <header>
     <div class="logo">Taxami Accountants</div>
-    <nav>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="navbar">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
@@ -19,28 +23,50 @@
         <li><a href="client-portal.html">Client Portal</a></li>
       </ul>
     </nav>
+
+    <a href="client-portal.html" class="cta">Book Consultation</a>
   </header>
 
-  <!-- Portal Section -->
+  <!-- ===== PAGE BANNER ===== -->
+  <section class="page-banner portal-banner"></section>
+
+  <!-- ===== CLIENT PORTAL SECTION ===== -->
   <section class="portal">
     <h2>Secure Client Portal</h2>
     <p>Log in to access your financial documents, tax returns, and bookkeeping records.</p>
+
     <form class="login-form">
       <label for="username">Username</label>
       <input type="text" id="username" name="username" required>
-      
+
       <label for="password">Password</label>
       <input type="password" id="password" name="password" required>
-      
+
       <button type="submit">Login</button>
     </form>
-    <p class="note">For assistance, contact <a href="mailto:info@taxamiaccountants.com">info@taxamiaccountants.com</a></p>
+
+    <p class="note">
+      For assistance, contact <a href="mailto:info@taxamiaccountants.com">info@taxamiaccountants.com</a>
+    </p>
   </section>
 
-  <!-- Footer -->
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>📍 24842 89th Ave NY 11426 | 📞 201-526-5844 | 🌐 www.taxamiaccountants.com | 📧 info@taxamiaccountants.com</p>
-    <p>Connect with us on <a href="https://www.linkedin.com/company/taxami-accountants" target="_blank">LinkedIn</a></p>
+    <p>📍 24842 89th Ave NY 11426 | 📞 201-526-5844 | 📧 info@taxamiaccountants.com</p>
+    <p>© 2026 Taxami Accountants | Connect with us on 
+      <a href="https://www.linkedin.com/company/taxami-accountants" target="_blank">LinkedIn</a>
+    </p>
   </footer>
+
+  <!-- ===== MOBILE MENU SCRIPT ===== -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navbar");
+      const toggle = document.querySelector(".menu-toggle");
+      nav.classList.toggle("active");
+      toggle.innerHTML = nav.classList.contains("active") ? "✕" : "☰";
+    }
+  </script>
+
 </body>
 </html>

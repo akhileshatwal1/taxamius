@@ -7,28 +7,70 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- ===== HEADER ===== -->
   <header>
     <div class="logo">Taxami Accountants</div>
-    <nav>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="navbar">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="client-portal.html">Client Portal</a></li>
       </ul>
     </nav>
+
+    <a href="client-portal.html" class="cta">Book Consultation</a>
   </header>
 
+  <!-- ===== PAGE BANNER ===== -->
+  <section class="page-banner about-banner"></section>
+
+  <!-- ===== ABOUT SECTION ===== -->
   <section class="about">
     <h2>About Us</h2>
-    <p>At <strong>Taxami Accountants</strong>, we believe financial clarity is the foundation of business success. Based in New York, we provide certified accounting, taxation, and bookkeeping services tailored to individuals and businesses.</p>
-    <p>Our team combines years of professional expertise with a client-first approach. Whether you’re a startup navigating compliance, a corporation optimizing tax strategies, or an individual seeking reliable financial guidance, we are here to help you thrive.</p>
-    <p>We are proud members of recognized accounting associations and continually invest in technology and training to deliver accurate, timely, and secure solutions.</p>
+
+    <p>
+      At <strong>Taxami Accountants</strong>, we believe financial clarity is the
+      foundation of business success. Based in New York, we provide certified
+      accounting, taxation, and bookkeeping services tailored to individuals
+      and businesses.
+    </p>
+
+    <p>
+      Our team combines years of professional expertise with a client-first
+      approach. Whether you’re a startup navigating compliance, a corporation
+      optimizing tax strategies, or an individual seeking reliable financial
+      guidance, we are here to help you thrive.
+    </p>
+
+    <p>
+      We are committed to accuracy, transparency, and long-term partnerships.
+      By leveraging modern technology and proven accounting practices,
+      we ensure secure, timely, and dependable financial solutions.
+    </p>
   </section>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>© 2026 Taxami Accountants | Connect with us on <a href="https://www.linkedin.com/company/taxami-accountants" target="_blank">LinkedIn</a></p>
+    <p>📍 24842 89th Ave NY 11426 | 📞 201-526-5844 | 📧 info@taxamiaccountants.com</p>
+    <p>© 2026 Taxami Accountants | Connect with us on 
+      <a href="https://www.linkedin.com/company/taxami-accountants" target="_blank">LinkedIn</a>
+    </p>
   </footer>
+
+  <!-- ===== MOBILE MENU SCRIPT ===== -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navbar");
+      const toggle = document.querySelector(".menu-toggle");
+      nav.classList.toggle("active");
+      toggle.innerHTML = nav.classList.contains("active") ? "✕" : "☰";
+    }
+  </script>
+
 </body>
 </html>

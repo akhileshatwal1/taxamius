@@ -7,51 +7,76 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- ===== HEADER ===== -->
   <header>
     <div class="logo">Taxami Accountants</div>
-    <nav>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="navbar">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="client-portal.html">Client Portal</a></li>
       </ul>
     </nav>
+
+    <a href="client-portal.html" class="cta">Book Consultation</a>
   </header>
 
+  <!-- ===== PAGE BANNER ===== -->
+  <section class="page-banner services-banner"></section>
+
+  <!-- ===== SERVICES DETAIL ===== -->
   <section class="services">
     <h2>Our Services</h2>
     <div class="service-grid">
       <div class="card">
-        <h3>Tax Preparation & Filing</h3>
-        <p>Accurate, compliant, and stress-free tax return preparation for individuals and businesses.</p>
+        <h3>Tax Return Preparation & Filing</h3>
+        <p>Accurate tax return preparation and filing for individuals and businesses to ensure compliance and maximize returns.</p>
       </div>
       <div class="card">
         <h3>Bookkeeping & Financial Statements</h3>
-        <p>Maintain clean records and gain insights with professional bookkeeping and reporting.</p>
+        <p>Organized bookkeeping and professional financial statements for informed decision-making and clear reporting.</p>
       </div>
       <div class="card">
-        <h3>Tax Planning</h3>
-        <p>Strategic tax planning to minimize liabilities and maximize savings.</p>
+        <h3>Personalized Tax Planning</h3>
+        <p>Tailored strategies to minimize tax liability and optimize your financial position throughout the year.</p>
       </div>
       <div class="card">
-        <h3>Business Entity Support</h3>
-        <p>LLC, S-Corp, and partnership setup guidance to ensure compliance and efficiency.</p>
+        <h3>LLC, S-Corp & Partnership Support</h3>
+        <p>Guidance and compliance services for businesses including entity setup, filings, and corporate accounting.</p>
       </div>
       <div class="card">
-        <h3>New Business Advisory</h3>
-        <p>Helping startups with financial structure, compliance, and growth strategies.</p>
+        <h3>New Business Setup & Advisory</h3>
+        <p>Support for entrepreneurs with entity formation, licensing, and strategic financial advice for growth.</p>
       </div>
       <div class="card">
-        <h3>Business Analytics</h3>
-        <p>Data-driven insights to improve decision-making and profitability.</p>
+        <h3>Business Analytics Solutions</h3>
+        <p>Detailed business analysis and reporting to enhance profitability, efficiency, and operational decisions.</p>
       </div>
     </div>
   </section>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>© 2026 Taxami Accountants | Connect with us on <a href="https://www.linkedin.com/company/taxami-accountants" target="_blank">LinkedIn</a></p>
+    <p>📍 24842 89th Ave NY 11426 | 📞 201-526-5844 | 📧 info@taxamiaccountants.com</p>
+    <p>© 2026 Taxami Accountants | Connect with us on 
+      <a href="https://www.linkedin.com/company/taxami-accountants" target="_blank">LinkedIn</a>
+    </p>
   </footer>
+
+  <!-- ===== MOBILE MENU SCRIPT ===== -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navbar");
+      const toggle = document.querySelector(".menu-toggle");
+      nav.classList.toggle("active");
+      toggle.innerHTML = nav.classList.contains("active") ? "✕" : "☰";
+    }
+  </script>
+
 </body>
 </html>

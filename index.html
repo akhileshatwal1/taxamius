@@ -7,34 +7,44 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
+
+  <!-- ===== HEADER ===== -->
   <header>
     <div class="logo">Taxami Accountants</div>
-    <nav>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="navbar">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-      </ul>
+        </ul>
     </nav>
+
     <a href="client-portal.html" class="cta">Book Consultation</a>
   </header>
 
-  <!-- Hero Section -->
+  <!-- ===== HERO SECTION ===== 
   <section class="hero">
-    <h1>Reliable Tax & Accounting Solutions</h1>
+   <h1>Reliable Tax & Accounting Solutions for Lasting Success</h1>
     <p>Serving individuals and businesses in New York with trusted financial expertise.</p>
     <a href="services.html" class="btn">Explore Services</a>
-  </section>
+  </section>-->
+<!-- ===== PAGE BANNER ===== -->
+<section class="page-banner index-banner"></section>
 
-  <!-- Flyer Integration -->
-<section class="flyer" style="padding-top: 20px; padding-bottom: 20px; margin: 0;">
-  <h2 style="margin: 0; padding: 0;">Our Services Snapshot</h2>
-  <img src="services.jpg" alt="Taxami Accountants Flyer" style="max-width: 100%; height: auto; object-fit: contain; border: 2px solid #1C2C54; border-radius: 8px;">
+<!-- ===== INTRO SECTION ===== -->
+<section class="about">
+  <h2>Reliable Tax & Accounting Solutions for Lasting Success</h2>
+
+  <p>
+    At Taxami Accountants, we empower individuals, entrepreneurs, and growing businesses across New York with accurate, strategic, and stress-free financial services. From expert tax preparation and proactive tax planning to precise bookkeeping and insightful business advisory, we deliver clarity, compliance, and confidence in every number. Our client-first approach ensures your finances are structured for stability today and sustainable growth tomorrow — so you can focus on building your success while we handle the complexity.
+  </p>
 </section>
 
-  <!-- Services Overview -->
+  <!-- ===== SERVICES OVERVIEW ===== -->
   <section class="services">
     <h2>What We Offer</h2>
     <div class="service-grid">
@@ -47,9 +57,23 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>📍 24842 89th Ave NY 11426 | 📞 201-526-5844 | 🌐 www.taxamiaccountants.com | 📧 info@taxamiaccountants.com</p>
+    <p>📍 24842 89th Ave NY 11426 | 📞 201-526-5844 | 📧 info@taxamiaccountants.com</p>
+    <p>© 2026 Taxami Accountants | Connect with us on 
+      <a href="https://www.linkedin.com/company/taxami-accountants" target="_blank">LinkedIn</a>
+    </p>
   </footer>
+
+  <!-- ===== MOBILE MENU SCRIPT ===== -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navbar");
+      const toggle = document.querySelector(".menu-toggle");
+      nav.classList.toggle("active");
+      toggle.innerHTML = nav.classList.contains("active") ? "✕" : "☰";
+    }
+  </script>
+
 </body>
 </html>
